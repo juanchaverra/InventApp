@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">InventApp</string>
+    <string name="correo_electronico">Correo electrónico</string>
+    <string name="password">Digite contraseña</string>
+    <string name="iniciar_sesion">Iniciar Sesión</string>
+    <string name="registrarse">Registrarse</string>
+    <string name="digite_nombre">Digite nombre</string>
+    <string name="correo_electr_nico">Correo Electrónico</string>
+    <string name="telefono">Telefono</string>
+    <string name="registrar">Guardar</string>
+    <string name="correo">Correo</string>
+    <string name="contraseña">password</string>
+    <string name="ingresar">Ingresar</string>
+    <string name="masculino">Masculino</string>
+    <string name="femenino">Femenino</string>
+    <string name="cine">cine</string>
+    <string name="leer">leer</string>
+    <string name="deporte">deporte</string>
+    <string name="ciclismo">ciclismo</string>
+    <string name="msg_error_campos_vacios">Debe digitar todos los campos</string>
+    <string name="nombre_lb">nombre:</string>
+    <string name="correo_lb">Correo:</string>
+    <string name="telefono_lb">Telefono</string>
+    <string name="sexo_lb">Sexo:</string>
+    <string name="pasatiempos_lb">Pasatiempos:</string>
+    <string name="opciones">Opciones</string>
+    <string name="pick_date">Fecha de Nacimiento</string>
+    <string name="fecha_lb">Fecha:</string>
+    <string name="registro_movil">movil</string>
+    <string name="formato">MM/dd/yyyy</string>
+    <string name="verifyToPass">Confirmar constraseña</string>
+    <string name="msg_pass_not_verify">Las contraseñas no coinciden</string>
+    <string name="reg_hobbies">Hobbies</string>
+    <string name="reg_act_city">Ciudad de origen</string>
+    <string name="ciudad_de_origen">Ciudad de origen</string>
+    <string name="todo">TODO</string>
+    <string-array name="city_origen">
+        <item>Medellín</item>
+        <item>Santo Domingo</item>
+        <item>Bogota</item>
+        <item>Cali</item>
+        <item>Santuario</item>
+    </string-array>
+
+</resources>

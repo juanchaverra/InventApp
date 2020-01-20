@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistroActivity"
+    android:background="@android:color/darker_gray"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="200dp"
+                android:layout_height="250dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10dp"
+                android:textAlignment="center"
+                app:srcCompat="@drawable/logo2"
+                android:contentDescription="@string/todo" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/et_nombre_r"
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="3dp"
+                android:background="@drawable/radius"
+                android:padding="8dip"
+                android:hint="@string/digite_nombre" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/et_correo_r"
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="3dp"
+                android:background="@drawable/radius"
+                android:padding="8dip"
+                android:inputType="textEmailAddress"
+                android:hint="@string/correo"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/et_telefono_r"
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="3dp"
+                android:background="@drawable/radius"
+                android:padding="8dip"
+                android:inputType="number"
+                android:hint="@string/registro_movil"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/et_password_r"
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="3dp"
+                android:background="@drawable/radius"
+                android:padding="8dip"
+                android:inputType="textPassword"
+                android:hint="@string/password"/>
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/et_verpass_r"
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="3dp"
+                android:background="@drawable/radius"
+                android:padding="8dip"
+                android:inputType="textPassword"
+                android:hint="@string/verifyToPass"/>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="6dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:gravity="center_horizontal">
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/masculino"
+                    android:checked="true"
+                    android:id="@+id/rb_masculino"/>
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/femenino"
+                    android:id="@+id/rb_femenino"/>
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/reg_hobbies"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:textColor="@android:color/black"/>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <CheckBox
+                        android:layout_width= "0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/leer"
+                        android:id="@+id/cb_leer"/>
+
+                    <CheckBox
+                        android:layout_width= "0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/deporte"
+                        android:id="@+id/cb_deporte"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <CheckBox
+                        android:layout_width= "0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/ciclismo"
+                        android:id="@+id/cb_cicla"/>
+
+                    <CheckBox
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/cine"
+                        android:id="@+id/cb_cine"/>
+                </TableRow>
+
+            </TableLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/pick_date"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:layout_margin="20dp"
+                android:textColor="#008577"
+                android:id="@+id/tv_showPicker"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ciudad_de_origen"
+                android:textColor="#008577"
+                android:layout_marginStart="30dp"
+                android:layout_marginBottom="5dp"/>
+
+            <Spinner
+                android:id="@+id/sp_ciudad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/city_origen"
+                android:layout_marginStart="40dp"
+                android:layout_marginBottom="15dp"
+                />
+
+
+            <Button
+                android:id="@+id/bt_registrar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bt_radius"
+                android:textColorHint="@android:color/black"
+                android:layout_gravity="center"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:hint="@string/registrar" />
+
+
+
+            <TextView
+                android:id="@+id/tv_resultado"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginTop="15dp"
+                android:textColor="#008577"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/ingresar" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
